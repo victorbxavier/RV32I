@@ -1,0 +1,26 @@
+# Simulation artifacts
+*.vvp
+*.vcd
+*.vpd
+*.wlf
+
+# ModelSim / QuestaSim
+work/
+transcript
+vsim.wlf
+
+# Verilog / SystemVerilog compilation artifacts
+*.o
+*.out
+
+# Python artifacts
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Editor / IDE
+.vscode/
+
+# OS files
+.DS_Store
+Thumbs.db
