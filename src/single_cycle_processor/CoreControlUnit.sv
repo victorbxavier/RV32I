@@ -270,7 +270,7 @@ module CoreControlUnit #(parameter XLEN = 32)
                            end
                     3'b101:
                            begin
-                           alu_op_sel_o = ((funct7_bit5_i)? OP_SRA : OP_SRL);
+                           alu_op_sel_o = alu_select_e'(funct7_bit5_i ? OP_SRA : OP_SRL);
                            comp_op_sel_o = OP_BUNKNOWN;
                            execute_port_b_sel_o = 1'b0;
                            reg_write_data_sel_o = RD_MUX_ALU;
