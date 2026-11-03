@@ -130,7 +130,7 @@ module ProcessorCore
 
     ComparatorUnit #(.XLEN(XLEN)) bcu
     (
-        .branch_o         (branch_enable),
+        .comp_o           (branch_enable),
         .comp_port_a_i    (comp_port_a),
         .comp_port_b_i    (comp_port_b),
         .comp_op_sel_i    (comp_op_sel)
