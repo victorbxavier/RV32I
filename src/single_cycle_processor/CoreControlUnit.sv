@@ -30,6 +30,7 @@ module CoreControlUnit #(parameter XLEN = 32)
 
     localparam OP_R_TYPE        = 7'b0110011;
     localparam OP_B_TYPE        = 7'b1100011;
+    localparam OP_NEW_TYPE      = 7'b0001011;
     localparam OP_S_TYPE        = 7'b0100011;
     localparam OP_I_JALR_TYPE   = 7'b1100111;
     localparam OP_I_LOAD_TYPE   = 7'b0000011;
@@ -351,6 +352,43 @@ module CoreControlUnit #(parameter XLEN = 32)
                 load_store_type_o = LS_N_A;
                 data_memory_write_enable_o = 1'b0;
                 reg_write_data_sel_o = RD_MUX_PC_N;
+            end
+            OP_NEW_TYPE:
+            begin
+                pc_mux_sel_o = 1'b0;
+                imm_select_o = IMM_UNKNOWN_TYPE;
+                execute_port_a_sel_o = 1'b1;
+                execute_port_b_sel_o = 1'b1;
+                comp_op_sel_o = OP_BUNKNOWN;
+                load_store_type_o = LS_N_A;
+                data_memory_write_enable_o = 1'b0;
+
+                unique case(funct3_i)
+                    3'b000:
+                    begin
+                        reg_write_enable_o = 1'b1;
+                        alu_op_sel_o = OP_MAX;
+                        reg_write_data_sel_o = RD_MUX_ALU;
+                    end
+                    3'b001:
+                    begin
+                        reg_write_enable_o = 1'b1;
+                        alu_op_sel_o = OP_UNKNOWN;
+                        reg_write_data_sel_o = RD_MUX_MAC;
+                    end
+                    3'b010:
+                    begin
+                        reg_write_enable_o = 1'b1;
+                        alu_op_sel_o = OP_SIGN;
+                        reg_write_data_sel_o = RD_MUX_ALU;
+                    end
+                    default:
+                    begin
+                        reg_write_enable_o = 1'b0;
+                        alu_op_sel_o = OP_UNKNOWN;
+                        reg_write_data_sel_o = RD_MUX_N_A;
+                    end
+                endcase
             end
             default:
             begin

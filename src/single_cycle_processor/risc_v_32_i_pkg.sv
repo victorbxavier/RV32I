@@ -35,7 +35,9 @@ typedef enum logic [ALU_SEL_LEN-1:0] {
     OP_SLL,
     OP_SRL,
     OP_SRA,
-    OP_UNKNOWN
+    OP_UNKNOWN,
+    OP_MAX,
+    OP_SIGN
 } alu_select_e;
 
 parameter BRANCH_SEL_LEN = 3;
@@ -58,7 +60,8 @@ typedef enum logic [RD_MUX_SEL_LEN-1:0] {
     RD_MUX_BCU,
     RD_MUX_IMM,
     RD_MUX_PC_N,
-    RD_MUX_N_A
+    RD_MUX_N_A,
+    RD_MUX_MAC
 }write_data_select_e;
 
 parameter LOAD_STORE_TYPE_LEN = 4;

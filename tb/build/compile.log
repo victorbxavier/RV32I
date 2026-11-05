@@ -1,0 +1,39 @@
+build/InstructionMemory.sv:26: sorry: constant selects in always_* processes are not currently supported (all bits will be included).
+../src/single_cycle_processor/ImmediateSignExtend.sv:22: sorry: constant selects in always_* processes are not currently supported (all bits will be included).
+../src/single_cycle_processor/ImmediateSignExtend.sv:22: sorry: constant selects in always_* processes are not currently supported (all bits will be included).
+../src/single_cycle_processor/ImmediateSignExtend.sv:22: sorry: constant selects in always_* processes are not currently supported (all bits will be included).
+../src/single_cycle_processor/ImmediateSignExtend.sv:22: sorry: constant selects in always_* processes are not currently supported (all bits will be included).
+../src/single_cycle_processor/ImmediateSignExtend.sv:22: sorry: constant selects in always_* processes are not currently supported (all bits will be included).
+../src/single_cycle_processor/ImmediateSignExtend.sv:22: sorry: constant selects in always_* processes are not currently supported (all bits will be included).
+../src/single_cycle_processor/ImmediateSignExtend.sv:22: sorry: constant selects in always_* processes are not currently supported (all bits will be included).
+../src/single_cycle_processor/ImmediateSignExtend.sv:22: sorry: constant selects in always_* processes are not currently supported (all bits will be included).
+../src/single_cycle_processor/ImmediateSignExtend.sv:22: sorry: constant selects in always_* processes are not currently supported (all bits will be included).
+../src/single_cycle_processor/ImmediateSignExtend.sv:22: sorry: constant selects in always_* processes are not currently supported (all bits will be included).
+../src/single_cycle_processor/ImmediateSignExtend.sv:22: sorry: constant selects in always_* processes are not currently supported (all bits will be included).
+../src/single_cycle_processor/ArithmeticLogicUnit.sv:24: sorry: constant selects in always_* processes are not currently supported (all bits will be included).
+../src/single_cycle_processor/ArithmeticLogicUnit.sv:24: sorry: constant selects in always_* processes are not currently supported (all bits will be included).
+../src/single_cycle_processor/LoadStoreUnit.sv:25: sorry: constant selects in always_* processes are not currently supported (all bits will be included).
+../src/single_cycle_processor/LoadStoreUnit.sv:25: sorry: constant selects in always_* processes are not currently supported (all bits will be included).
+../src/single_cycle_processor/LoadStoreUnit.sv:37: sorry: constant selects in always_* processes are not currently supported (all bits will be included).
+../src/single_cycle_processor/LoadStoreUnit.sv:37: sorry: constant selects in always_* processes are not currently supported (all bits will be included).
+../src/single_cycle_processor/DataMemory.sv:29: warning: A procedural assign statement cannot be synthesized in an always_comb process.
+../src/single_cycle_processor/RegisterFile.sv:29: warning: A procedural assign statement cannot be synthesized in an always_comb process.
+../src/single_cycle_processor/RegisterFile.sv:30: warning: A procedural assign statement cannot be synthesized in an always_comb process.
+build/InstructionMemory.sv:27: warning: A procedural assign statement cannot be synthesized in an always_comb process.
+build/InstructionMemory.sv:27: vvp.tgt sorry: procedural continuous assignments are not yet fully supported. The RHS of this assignment will only be evaluated once, at the time the assignment statement is executed.
+../src/single_cycle_processor/RegisterFile.sv:29: vvp.tgt sorry: procedural continuous assignments are not yet fully supported. The RHS of this assignment will only be evaluated once, at the time the assignment statement is executed.
+../src/single_cycle_processor/RegisterFile.sv:30: vvp.tgt sorry: procedural continuous assignments are not yet fully supported. The RHS of this assignment will only be evaluated once, at the time the assignment statement is executed.
+../src/single_cycle_processor/ImmediateSignExtend.sv:23: vvp.tgt sorry: Case unique/unique0 qualities are ignored.
+../src/single_cycle_processor/CoreControlUnit.sv:47: vvp.tgt sorry: Case unique/unique0 qualities are ignored.
+../src/single_cycle_processor/CoreControlUnit.sv:55: vvp.tgt sorry: Case unique/unique0 qualities are ignored.
+../src/single_cycle_processor/CoreControlUnit.sv:147: vvp.tgt sorry: Case unique/unique0 qualities are ignored.
+../src/single_cycle_processor/CoreControlUnit.sv:171: vvp.tgt sorry: Case unique/unique0 qualities are ignored.
+../src/single_cycle_processor/CoreControlUnit.sv:203: vvp.tgt sorry: Case unique/unique0 qualities are ignored.
+../src/single_cycle_processor/CoreControlUnit.sv:222: vvp.tgt sorry: Case unique/unique0 qualities are ignored.
+../src/single_cycle_processor/CoreControlUnit.sv:366: vvp.tgt sorry: Case unique/unique0 qualities are ignored.
+../src/single_cycle_processor/ArithmeticLogicUnit.sv:25: vvp.tgt sorry: Case unique/unique0 qualities are ignored.
+../src/single_cycle_processor/ComparatorUnit.sv:26: vvp.tgt sorry: Case unique/unique0 qualities are ignored.
+../src/single_cycle_processor/LoadStoreUnit.sv:26: vvp.tgt sorry: Case unique/unique0 qualities are ignored.
+../src/single_cycle_processor/LoadStoreUnit.sv:38: vvp.tgt sorry: Case unique/unique0 qualities are ignored.
+../src/single_cycle_processor/ProcessorCore.sv:156: vvp.tgt sorry: Case unique/unique0 qualities are ignored.
+../src/single_cycle_processor/DataMemory.sv:29: vvp.tgt sorry: procedural continuous assignments are not yet fully supported. The RHS of this assignment will only be evaluated once, at the time the assignment statement is executed.
